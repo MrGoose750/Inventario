@@ -755,9 +755,9 @@ export default function App() {
             >
               <RefreshCw className="h-3.5 w-3.5" />
               <span className="hidden sm:inline">Restaurar Semillas</span>
-            </button>
+            </button>*/}
 
-            <button
+            {/*<button
               onClick={() => {
                 setShowClearConfirm(true);
               }}
@@ -766,9 +766,9 @@ export default function App() {
             >
               <Trash2 className="h-3.5 w-3.5 text-red-400/80" />
               <span className="hidden sm:inline">Vaciar Almacén</span>
-            </button>
+            </button>*/}
           </div>
-        </div>*/}
+        </div>
 
         {/* MENÚ DE COMPONENTES DE NAVEGACIÓN DE NEGOCIO */}
         <div className="bg-slate-900/40 border-t border-slate-900">
