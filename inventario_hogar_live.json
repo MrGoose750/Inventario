@@ -1,0 +1,171 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Muebles"
+    },
+    {
+      "id": 2,
+      "name": "Textiles de Hogar"
+    },
+    {
+      "id": 3,
+      "name": "Iluminación"
+    },
+    {
+      "id": 4,
+      "name": "Cocina Test 1779677930495"
+    },
+    {
+      "id": 5,
+      "name": "Auxiliar Maderas 1779677930618"
+    }
+  ],
+  "subcategories": [
+    {
+      "id": 1,
+      "name": "Sofás y Sillones",
+      "category_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Mesas e Isletas",
+      "category_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Sábanas y Fundas",
+      "category_id": 2
+    },
+    {
+      "id": 4,
+      "name": "Edredones y Mantas",
+      "category_id": 2
+    },
+    {
+      "id": 5,
+      "name": "Lámparas de Mesa",
+      "category_id": 3
+    },
+    {
+      "id": 6,
+      "name": "Lámparas Colgantes",
+      "category_id": 3
+    },
+    {
+      "id": 7,
+      "name": "Sartenes de Titanio",
+      "category_id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Sofá Modular 'Hygge'",
+      "description": "Sofá escandinavo minimalista con tela repelente a líquidos y soporte ergonómico.",
+      "category_id": 1,
+      "subcategory_id": 1,
+      "image_path": "/img/sofa_hygge.jpg",
+      "date_added": "2026-05-10T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Juego Sábanas Algodón Egipcio",
+      "description": "Sábanas de lujo de 400 hilos, hipoalergénicas y con tacto satinado ultrasuave.",
+      "category_id": 2,
+      "subcategory_id": 3,
+      "image_path": "/img/sabanas_lux.jpg",
+      "date_added": "2026-05-15T09:15:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Lámpara Minimalista 'Aura'",
+      "description": "Lámpara inteligente con luz cálida regulable y base de madera de encino natural.",
+      "category_id": 3,
+      "subcategory_id": 5,
+      "image_path": "/img/lampara_aura.jpg",
+      "date_added": "2026-05-20T18:45:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Batería Profesional Pro",
+      "description": "Acero inoxidable con recubrimiento de titanio",
+      "category_id": 4,
+      "subcategory_id": 7,
+      "image_path": "/img/bateria_test.jpg",
+      "date_added": "2026-05-25T02:58:50.617Z"
+    }
+  ],
+  "variants": [
+    {
+      "id": 1,
+      "product_id": 1,
+      "size": "3 Plazas (220cm)",
+      "target_audience": "Estándar / Familiar",
+      "stock_actual": 8,
+      "precio_compra": 320,
+      "precio_venta_base": 599.99,
+      "porcentaje_descuento": 10
+    },
+    {
+      "id": 2,
+      "product_id": 1,
+      "size": "2 Plazas (160cm)",
+      "target_audience": "Juvenil / Compacto",
+      "stock_actual": 3,
+      "precio_compra": 240,
+      "precio_venta_base": 449.99,
+      "porcentaje_descuento": 0
+    },
+    {
+      "id": 3,
+      "product_id": 2,
+      "size": "King Size",
+      "target_audience": "Residencial / Unisex",
+      "stock_actual": 25,
+      "precio_compra": 40,
+      "precio_venta_base": 95,
+      "porcentaje_descuento": 15
+    },
+    {
+      "id": 4,
+      "product_id": 2,
+      "size": "Queen Size",
+      "target_audience": "Residencial / Unisex",
+      "stock_actual": 40,
+      "precio_compra": 35,
+      "precio_venta_base": 79.99,
+      "porcentaje_descuento": 5
+    },
+    {
+      "id": 5,
+      "product_id": 3,
+      "size": "Estándar (Alto: 45cm)",
+      "target_audience": "Oficina / Dormitorio",
+      "stock_actual": 14,
+      "precio_compra": 15,
+      "precio_venta_base": 45,
+      "porcentaje_descuento": 0
+    },
+    {
+      "id": 6,
+      "product_id": 3,
+      "size": "Mini (Alto: 25cm)",
+      "target_audience": "Infantil / Infantil",
+      "stock_actual": 1,
+      "precio_compra": 10,
+      "precio_venta_base": 29.99,
+      "porcentaje_descuento": 20
+    },
+    {
+      "id": 7,
+      "product_id": 4,
+      "size": "Edición Limitada (Crítico)",
+      "target_audience": "General",
+      "stock_actual": 3,
+      "precio_compra": 100,
+      "precio_venta_base": 250,
+      "porcentaje_descuento": 20
+    }
+  ]
+}

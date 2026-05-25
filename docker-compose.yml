@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  # --- SERVICIO 1: BACKEND DE FASTAPI (POSTGRESQL) ---
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    container_name: api_inventario_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      # DATABASE_URL será inyectada desde el panel de la plataforma en la nube
+      - DATABASE_URL=${DATABASE_URL}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - NODE_ENV=production
+      - DEBUG_MODE=false
+      - ALLOWED_CORS_ORIGINS=*
+    networks:
+      - inventario_net
+
+  # --- SERVICIO 2: FRONTEND (NGINX) ---
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile.frontend
+    container_name: web_inventario_frontend
+    restart: unless-stopped
+    ports:
+      - "80:80" # Nginx sirve en el puerto 80 estándar para web
+    depends_on:
+      - backend
+    networks:
+      - inventario_net
+
+# --- REDES ---
+networks:
+  inventario_net:
+    driver: bridge

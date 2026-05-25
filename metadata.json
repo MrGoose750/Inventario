@@ -1,0 +1,6 @@
+{
+  "name": "Base de Datos de Inventario Hogar",
+  "description": "Panel de control premium para inventarios físicos con catálogo e-commerce, métricas financieras integrales de bodega y auditoría relacional de modelos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
