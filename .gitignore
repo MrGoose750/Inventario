@@ -6,3 +6,28 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# --- Python (Backend) ---
+__pycache__/
+*.py[cod]
+.venv/
+env/
+.env
+
+# --- Node.js (Frontend) ---
+node_modules/
+dist/
+.vite/
+
+# --- Base de datos y Secretos ---
+*.db
+*.sqlite3
+data/
+.env.local
+
+# --- IDEs y Sistema ---
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+
