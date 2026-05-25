@@ -572,7 +572,7 @@ export default function App() {
   };
 
   // Restablecer base de datos a semillas originales
-  const resetSimulator = async () => {
+  /*const resetSimulator = async () => {
     try {
       const res = await fetch(getApiUrl("/api/db/reset"), { method: "POST" });
       if (res.ok) {
@@ -605,7 +605,7 @@ export default function App() {
     setSubCategories([]);
     setProducts([]);
     setVariants([]);
-  };
+  };*/
 
   // Enviar mensaje al asistente de IA Gemini
   const handleSendMessage = async (e?: React.FormEvent, customText?: string) => {
@@ -748,7 +748,7 @@ export default function App() {
               SQLite: <span className="text-slate-300 font-semibold">inventario_hogar.db</span>
             </div>
 
-            <button
+            {/*<button
               onClick={resetSimulator}
               className="flex items-center gap-1.5 bg-slate-900 hover:bg-slate-800 hover:text-white transition-all px-3 py-1.5 rounded-lg border border-slate-800 text-xs text-slate-400 cursor-pointer"
               title="Restaurar base de datos simulada con semillas de prueba"
@@ -768,7 +768,7 @@ export default function App() {
               <span className="hidden sm:inline">Vaciar Almacén</span>
             </button>
           </div>
-        </div>
+        </div>*/}
 
         {/* MENÚ DE COMPONENTES DE NAVEGACIÓN DE NEGOCIO */}
         <div className="bg-slate-900/40 border-t border-slate-900">
