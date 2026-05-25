@@ -62,7 +62,10 @@ class Product(SQLModel, table=True):
     # Relaciones
     category: Optional[Category] = Relationship(back_populates="products")
     subcategory: Optional[SubCategory] = Relationship(back_populates="products")
-    variants: List["ProductVariant"] = Relationship(back_populates="product", cascade_delete=True)
+    variants: List["ProductVariant"] = Relationship(
+        back_populates="product", 
+        sa_relationship_kwargs={"cascade": "all, delete-orphan"}
+    )
 
 
 # --- 4. TABLA VARIANTE DE PRODUCTO ---
