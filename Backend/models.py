@@ -19,7 +19,10 @@ class Category(SQLModel, table=True):
     
     # Relaciones bidireccionales de SQLModel/SQLAlchemy
     # Permite acceder de forma directa con `category.subcategories` y `category.products`
-    subcategories: List["SubCategory"] = Relationship(back_populates="category", cascade_delete=True)
+    subcategories: List["SubCategory"] = Relationship(
+        back_populates="category", 
+        sa_relationship_kwargs={"cascade": "all, delete-orphan"}
+    )
     products: List["Product"] = Relationship(back_populates="category")
 
 
